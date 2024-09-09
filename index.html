@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="fr"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sélection aléatoire de noms</title>
+    <style>
+        .code-container {
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment {
+            color: #888;
+            font-style: italic;
+        }
+
+        .variable {
+            color: #3399ff;
+        }
+
+        .function {
+            color: #0066cc;
+        }
+    </style>
 </head>
 <body>
-    <script>
-        var nom = ['levy', 'joris', 'smeb'];
+    <div class="code-container">
+        <p class="comment">
+            // Tableau de noms
+        </p>
+        <p>
+            <span class="variable">var noms</span> = ['levy', 'joris', 'smeb'];
+        </p>
 
-        // Générer un index aléatoire entre 0 et la longueur du tableau - 1
-        var indexAleatoire = Math.floor(Math.random() * nom.length);
+        <p class="comment">
+            // Génère un index aléatoire
+        </p>
+        <p>
+            <span class="variable">var indexAleatoire</span> = Math.floor(Math.random() * noms.length);
+        </p>
 
-        // Récupérer le nom aléatoire
-        var nomAleatoire = nom[indexAleatoire];
+        <p class="comment">
+            // Sélectionne un nom aléatoire
+        </p>
+        <p>
+            <span class="variable">var nomAleatoire</span> = noms[indexAleatoire];
+        </p>
 
-        // Afficher le nom aléatoire et sa longueur
-        document.write(`${nomAleatoire} (${nomAleatoire.length} lettres)`);
-    </script>
+        <p class="comment">
+            // Affiche le résultat
+        </p>
+        <p>
+            document.write(`${nomAleatoire} (<span class="variable">nomAleatoire</span>.length lettres)`);
+        </p>
+    </div>
 </body>
 </html>
