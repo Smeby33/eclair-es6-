@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nom = ['levy', 'joris', 'smeb'];
+
+        // Générer un index aléatoire entre 0 et la longueur du tableau - 1
+        var indexAleatoire = Math.floor(Math.random() * nom.length);
+
+        // Récupérer le nom aléatoire
+        var nomAleatoire = nom[indexAleatoire];
+
+        // Afficher le nom aléatoire et sa longueur
+        document.write(`${nomAleatoire} (${nomAleatoire.length} lettres)`);
+    </script>
+</body>
+</html>
